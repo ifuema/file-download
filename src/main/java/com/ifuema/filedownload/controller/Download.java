@@ -125,6 +125,7 @@ public class Download {
 //            }
             IOUtils.copy(inputStream, outputStream);
             inputStream.close();
+            outputStream.close();
             stringList.add("回复：success");
             stringList.add("####################################################################################################");
             downloadLog.printLog(stringList);
